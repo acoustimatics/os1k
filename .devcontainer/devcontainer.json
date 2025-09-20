@@ -1,4 +1,5 @@
 {
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu"
+	"name": "os1k",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+	"postCreateCommand": "sudo apt update && sudo apt install -y clang llvm lld qemu-system-riscv32 curl"
 }
